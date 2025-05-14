@@ -26,7 +26,9 @@ function WhenCondition() {
         setConditions([...conditions, condition]);
     };
 
-    const conditionsList = conditions.map((condition)=><ConditionRow key={condition.id} condition = {condition} onChange = {handleConditionUpdate} />);
+    const conditionsList = conditions?.map((condition) =>
+        <ConditionRow key={condition.id} condition = {condition} onChange = {handleConditionUpdate} />
+    );
 
     
     //console.log(conditions);

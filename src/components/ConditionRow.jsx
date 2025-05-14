@@ -30,11 +30,11 @@ function ConditionRow({condition, onChange}) {
             <option value="||">OR</option>
         </select>
 
-        <select value={condition.field} onChange={handleFieldChange} defaultValue="">
-            <option value="" disabled >Select an option</option>
+        <select value={condition.field} onChange={handleFieldChange} >
+            <option value="" >Select an option</option>
             <option value="status">Status</option>
         </select>
-        <select value={condition.operator} onChange={handleOperatorChange} defaultValue="">
+        <select value={condition.operator} onChange={handleOperatorChange} >
             <option value=""></option>
             <option value="!=">!=</option>
             <option value="==">==</option>
